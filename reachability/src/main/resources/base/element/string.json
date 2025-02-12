@@ -1,0 +1,12 @@
+{
+  "string": [
+    {
+      "name": "page_show",
+      "value": "page from package"
+    },
+    {
+      "name": "reason",
+      "value": "需要申请网络访问权限以使用该功能"
+    }
+  ]
+}

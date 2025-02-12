@@ -1,0 +1,12 @@
+{
+  "name": "@devzeng/reachability",
+  "version": "0.1.0",
+  "description": "Discover the state of the network connectivity on HarmonyOS.",
+  "main": "Index.ets",
+  "author": "zengjing <hhtczengjing@gmail.com>",
+  "keywords": ["Reachability", "connection", "net"],
+  "homepage": "https://github.com/hhtczengjing/ohos_reachability",
+  "repository": "https://github.com/hhtczengjing/ohos_reachability.git",
+  "license": "MIT",
+  "dependencies": {}
+}
