@@ -7,7 +7,7 @@ export enum ConnectivityType {
   CELLULAR = "cellular",
   ETHERNET = "ethernet",
   BLUETOOTH = "bluetooth",
-  VPN = "vpn",
+  VPN = "vpn"
 }
 
 const TAG = "[Connectivity]";
@@ -27,7 +27,7 @@ export class Connectivity {
       this.networkType = this.hasTransport(capabilities.bearerTypes);
       return this.networkType;
     } catch (e) {
-      Logger.error(TAG, `getNetworkType error: ${ JSON.stringify(e) }`);
+      Logger.error(TAG, `getNetworkType error: ${JSON.stringify(e)}`);
       return ConnectivityType.NONE;
     }
   }

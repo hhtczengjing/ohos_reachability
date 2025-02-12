@@ -26,7 +26,8 @@ struct Index {
         .fontSize(30)
         .fontWeight('bold')
         .textAlign(TextAlign.Center)
-        .width('100%');
+        .width('100%')
+        .margin({ top: 24 })
     }
     .height('100%')
     .width('100%')

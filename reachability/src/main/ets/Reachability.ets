@@ -40,7 +40,7 @@ export class Reachability {
 
     // 注册
     Connectivity.netConnection.register(async (error) => {
-      Logger.info(TAG, `register completed ${ error ? JSON.stringify(error) : '' }`);
+      Logger.info(TAG, `register completed ${error ? JSON.stringify(error) : ''}`);
       this._currentConnection = await this.connectivity.getNetworkType();
       this.notifyReachabilityChanged();
     });
@@ -83,11 +83,12 @@ export class Reachability {
     this.notifierRunning = false;
 
     Connectivity.netConnection.unregister((error) => {
-      Logger.info(TAG, `unregister completed ${ error ? JSON.stringify(error) : '' }`);
+      Logger.info(TAG, `unregister completed ${error ? JSON.stringify(error) : ''}`);
     });
   }
 
   private notifyReachabilityChanged(): void {
-    this._currentConnection === ConnectivityType.NONE ? this.whenUnreachable?.() : this.whenReachable?.(this._currentConnection);
+    this._currentConnection === ConnectivityType.NONE ? this.whenUnreachable?.() :
+      this.whenReachable?.(this._currentConnection);
   }
 }
